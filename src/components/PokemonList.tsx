@@ -1,10 +1,15 @@
-import PokemonCard from "./PokemnonCard";
-import '.PokemonList.css'
+import { Pokemon } from "../models/Pokemon";
+import PokemonCard from "./PokemonCard";
+import './PokemonList.css'
 
-const PokemonList = (pokemons: any[]) => {
+type Props = {
+    pokemons: Pokemon[]
+}
+
+const PokemonList = ({pokemons}: Props) => {
     return (
         <div className="PokemonList">
-            { pokemons.map( pokemon => <PokemonCard/> ) }
+            { pokemons.map( pokemon => <PokemonCard key={pokemon.name} pokemon={pokemon}/> ) }
         </div>
     );
 }
