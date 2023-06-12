@@ -1,15 +1,15 @@
 import { SET_POKEMONS } from "../actions/types"
 import { Pokemon } from "../models/pokemon.model"
 
-type TypeState = {
+export type StatePokemons = {
     pokemons: Pokemon[]
 }
 
-const initialState: TypeState = {
+const initialState: StatePokemons = {
     pokemons: [],
 }
 
-export const pokemonsReducer = (state: TypeState = initialState, action: any) => {
+export const pokemonsReducer = (state: StatePokemons = initialState, action: any) => {
     switch(action.type) {
         case SET_POKEMONS:
             return {...state, pokemons: action.payload};
