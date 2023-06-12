@@ -1,4 +1,4 @@
-import { Pokemon } from "../models/Pokemon";
+import { Pokemon } from "../models/pokemon.model";
 import PokemonCard from "./PokemonCard";
 import './PokemonList.css'
 

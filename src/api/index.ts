@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { PokemonApiResponse } from '../models/Pokemon';
+import { PokemonApiResponse } from '../models/pokemon.model';
 
 export const getPokemon = async () => {
     try {
