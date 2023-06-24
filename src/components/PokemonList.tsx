@@ -1,9 +1,9 @@
-import { Pokemon } from "../models/pokemon.model";
+import { PokemonDetail } from "../models/pokemon.model";
 import PokemonCard from "./PokemonCard";
 import './PokemonList.css'
 
 type Props = {
-    pokemons: Pokemon[]
+    pokemons: PokemonDetail[]
 }
 
 const PokemonList = ({pokemons}: Props) => {
